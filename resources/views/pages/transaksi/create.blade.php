@@ -119,7 +119,7 @@
             var harga = $("#barang").select2().find(":selected").attr('harga')
             var qty = $('#jumlah').val()
             var subtotal = harga * qty;
-            if (id != '') {
+            if (id != '' && qty != '') {
                 $('#baranglist').append('<tr><td><input type="hidden" name="master_barang_id[]" value="' + id +
                     '">' + id + '</td><td>' + nama +
                     '</td><td><input type="hidden" name="jumlah[]" value="' +

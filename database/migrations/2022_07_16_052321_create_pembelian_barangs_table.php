@@ -13,7 +13,7 @@ class CreatePembelianBarangsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pembelian_barang', function (Blueprint $table) {
+        Schema::create('transaksi_pembelian_barang', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('transaksi_pembelian_id');
             $table->unsignedBigInteger('master_barang_id');
